@@ -208,7 +208,9 @@ img {
 /*----------------------------------------------------------------*/
 /*----------------------------------------------------------------*/
 
-.main 
+.main {
+    margin: 0 0 20px 0;
+}
 .main-slider {
     background-image: url("https://livedemo00-opencart.template-help.com/opencart_prod-23516/image/cache/catalog/slide-3-870x345.jpg") ; 
     background-size: cover;
@@ -216,9 +218,13 @@ img {
     display: flex;
     align-items: center;
     padding-left: 40px;
+    position: relative;
 }
 .main-slider__item {
-    width: 34%;
+    display: none;
+}
+.main-slider__item--active {
+    display: block;
 }
 .main-slider__header {
     text-transform: uppercase;
@@ -244,6 +250,18 @@ img {
 }
 .main-slider__link:hover {
     background-color: var(--main-blue);
+}
+
+.slider-button {
+   position: absolute;
+   right: 13px;
+   bottom: 10px;
+}
+.slider-button__left {
+    color: rgb(175, 175, 175);
+}
+.slider-button__right {
+    color: rgb(175, 175, 175);
 }
 /*----------------------------------------------------------------*/
 .main-stock {
