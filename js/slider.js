@@ -6,7 +6,6 @@ document.getElementsByClassName("slider-button__left")[0].addEventListener("clic
         slides[slideIndex].classList.remove('main-slider__item--active');
         slideIndex--;
         slides[slideIndex].classList.add('main-slider__item--active');
-        console.log(slideIndex)
     }
 });
 
@@ -16,7 +15,6 @@ document.getElementsByClassName("slider-button__right")[0].addEventListener("cli
         slides[slideIndex].classList.remove('main-slider__item--active');
         slideIndex++;
         slides[slideIndex].classList.add('main-slider__item--active');
-        console.log(slideIndex)
     } 
 });
 

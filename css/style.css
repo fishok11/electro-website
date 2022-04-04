@@ -263,9 +263,17 @@ img {
 }
 .slider-button__left {
     color: rgb(175, 175, 175);
+    transition: .3s;
 }
 .slider-button__right {
     color: rgb(175, 175, 175);
+    transition: .3s;
+}
+.slider-button__left:hover{
+    color: var(--main-blue);
+}
+.slider-button__right:hover{
+    color: var(--main-blue);
 }
 /*----------------------------------------------------------------*/
 .main-stock {
@@ -330,6 +338,7 @@ img {
 }
 .main-navline__item
 .navline-item__link {
+    font-size: 14px;
     text-decoration:none ;
     color: rgb(175, 175, 175);
     transition: 0.3s;
