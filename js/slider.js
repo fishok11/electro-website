@@ -1,19 +1,23 @@
-let slide = 0;
+let slideIndex = 0;
 
 document.getElementsByClassName("slider-button__left")[0].addEventListener("click", function() {
-    const slides = document.getElementsByClassName("main-slider__item");
-    slides[slide].classList.remove('main-slider__item--active');
-    slide--;
-    slides[slide].classList.add('main-slider__item--active');
-    console.log(slide)
+    if ( slideIndex > 0 ) {
+        const slides = document.getElementsByClassName("main-slider__item");
+        slides[slideIndex].classList.remove('main-slider__item--active');
+        slideIndex--;
+        slides[slideIndex].classList.add('main-slider__item--active');
+        console.log(slideIndex)
+    }
 });
 
 document.getElementsByClassName("slider-button__right")[0].addEventListener("click", function() {
-    const slides = document.getElementsByClassName("main-slider__item");
-    slides[slide].classList.remove('main-slider__item--active');
-    slide++;
-    slides[slide].classList.add('main-slider__item--active');
-    console.log(slide)
+    if ( slideIndex < 2 ) {
+        const slides = document.getElementsByClassName("main-slider__item");
+        slides[slideIndex].classList.remove('main-slider__item--active');
+        slideIndex++;
+        slides[slideIndex].classList.add('main-slider__item--active');
+        console.log(slideIndex)
+    } 
 });
 
 
