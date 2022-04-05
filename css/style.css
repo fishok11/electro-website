@@ -253,17 +253,27 @@ img {
     position: relative;
 }
 @keyframes header {
-    0%{opacity: 0; top: -20px;}
-    10%{opacity: .1; top: -18px;}
-    20%{opacity: .2; top: -16px;}
-    30%{opacity: .3; top: -14px;}
-    40%{opacity: .4; top: -12px;}
-    50%{opacity: .5; top: -10px;}
-    60%{opacity: .6; top: -8px;}
-    70%{opacity: .7; top: -6px;}
-    80%{opacity: .8; top: -4px;}
-    90%{opacity: .9; top: -2px;}
-    100%{opacity: 1; top: 0;} 
+    0% {top: -20px;}
+    5% {top: -19px;}
+    10% {top: -18px;}
+    15% {top: -17px;}
+    20% {top: -16px;}
+    25% {top: -15px;}
+    30% {top: -14px;}
+    35% {top: -13px;}
+    40% {top: -12px;}
+    45% {top: -11px;}
+    50% {top: -10px;}
+    55% {top: -9px;}
+    60% {top: -8px;}
+    65% {top: -7px;}
+    70% {top: -6px;}
+    75% {top: -5px;}
+    80% {top: -4px;}
+    85% {top: -3px;}
+    90% {top: -2px;}
+    95% {top: -1px;}
+    100% {top: 0;} 
 }
 .main-slider__text {
     color: #888888;
@@ -274,17 +284,27 @@ img {
     position: relative;
 } 
 @keyframes text {
-    0%{opacity: 0; bottom: -20px;}
-    10%{opacity: .1; bottom: -18px;}
-    20%{opacity: .2; bottom: -16px;}
-    30%{opacity: .3; bottom: -14px;}
-    40%{opacity: .4; bottom: -12px;}
-    50%{opacity: .5; bottom: -10px;}
-    60%{opacity: .6; bottom: -8px;}
-    70%{opacity: .7; bottom: -6px;}
-    80%{opacity: .8; bottom: -4px;}
-    90%{opacity: .9; bottom: -2px;}
-    100%{opacity: 1; bottom: 0;} 
+    0% {bottom: -20px;}
+    5% {bottom: -19px;}
+    10% {bottom: -18px;}
+    15% {bottom: -17px;}
+    20% {bottom: -16px;}
+    25% {bottom: -15px;}
+    30% {bottom: -14px;}
+    35% {bottom: -13px;}
+    40% {bottom: -12px;}
+    45% {bottom: -11px;}
+    50% {bottom: -10px;}
+    55% {bottom: -9px;}
+    60% {bottom: -8px;}
+    65% {bottom: -7px;}
+    70% {bottom: -6px;}
+    75% {bottom: -5px;}
+    80% {bottom: -4px;}
+    85% {bottom: -3px;}
+    90% {bottom: -2px;}
+    95% {bottom: -1px;}
+    100% {bottom: 0;} 
 }
 .main-slider__link {
     padding: 7px 0 7px 0;
@@ -307,17 +327,27 @@ img {
     background-color: var(--main-blue);
 }
 @keyframes link {
-    0%{opacity: 0; bottom: -20px; display: none;}
-    10%{opacity: .1; bottom: -18px;}
-    20%{opacity: .2; bottom: -16px;}
-    30%{opacity: .3; bottom: -14px;}
-    40%{opacity: .4; bottom: -12px;}
-    50%{opacity: .5; bottom: -10px;}
-    60%{opacity: .6; bottom: -8px;}
-    70%{opacity: .7; bottom: -6px; display: block;}
-    80%{opacity: .8; bottom: -4px;}
-    90%{opacity: .9; bottom: -2px;}
-    100%{opacity: 1; bottom: 0;} 
+    0% {bottom: -20px;}
+    5% {bottom: -19px;}
+    10% {bottom: -18px;}
+    15% {bottom: -17px;}
+    20% {bottom: -16px;}
+    25% {bottom: -15px;}
+    30% {bottom: -14px;}
+    35% {bottom: -13px;}
+    40% {bottom: -12px;}
+    45% {bottom: -11px;}
+    50% {bottom: -10px;}
+    55% {bottom: -9px;}
+    60% {bottom: -8px;}
+    65% {bottom: -7px;}
+    70% {bottom: -6px;}
+    75% {bottom: -5px;}
+    80% {bottom: -4px;}
+    85% {bottom: -3px;}
+    90% {bottom: -2px;}
+    95% {bottom: -1px;}
+    100% {bottom: 0;} 
 }
 .slider-button {
    position: absolute;
