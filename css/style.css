@@ -227,17 +227,64 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    animation-duration: .8s;
+    animation-name: slide;
 }
+@keyframes slide {
+    0%{opacity: 0;}
+    10%{opacity: .1;}
+    20%{opacity: .2;}
+    30%{opacity: .3;}
+    40%{opacity: .4;}
+    50%{opacity: .5;}
+    60%{opacity: .6;}
+    70%{opacity: .7;}
+    80%{opacity: .8;}
+    90%{opacity: .9;}
+    100%{opacity: 1;} 
+} 
 .main-slider__header {
     text-transform: uppercase;
     color: var(--main-blue);
     margin: 0 0 7px 0;
     font-size: 30px;
+    animation-duration: .5s;
+    animation-name: header;
+    position: relative;
+}
+@keyframes header {
+    0%{opacity: 0; top: -20px;}
+    10%{opacity: .1; top: -18px;}
+    20%{opacity: .2; top: -16px;}
+    30%{opacity: .3; top: -14px;}
+    40%{opacity: .4; top: -12px;}
+    50%{opacity: .5; top: -10px;}
+    60%{opacity: .6; top: -8px;}
+    70%{opacity: .7; top: -6px;}
+    80%{opacity: .8; top: -4px;}
+    90%{opacity: .9; top: -2px;}
+    100%{opacity: 1; top: 0;} 
 }
 .main-slider__text {
     color: #888888;
     margin: 7px 0;
     font-size: 14px;
+    animation-duration: .6s;
+    animation-name: text;
+    position: relative;
+} 
+@keyframes text {
+    0%{opacity: 0; bottom: -20px;}
+    10%{opacity: .1; bottom: -18px;}
+    20%{opacity: .2; bottom: -16px;}
+    30%{opacity: .3; bottom: -14px;}
+    40%{opacity: .4; bottom: -12px;}
+    50%{opacity: .5; bottom: -10px;}
+    60%{opacity: .6; bottom: -8px;}
+    70%{opacity: .7; bottom: -6px;}
+    80%{opacity: .8; bottom: -4px;}
+    90%{opacity: .9; bottom: -2px;}
+    100%{opacity: 1; bottom: 0;} 
 }
 .main-slider__link {
     padding: 7px 0 7px 0;
@@ -252,9 +299,25 @@ img {
     box-sizing: border-box;
     display: inline-block;
     transition: 0.3s;
+    animation-duration: .7s;
+    animation-name: link;
+    position: relative;
 }
 .main-slider__link:hover {
     background-color: var(--main-blue);
+}
+@keyframes link {
+    0%{opacity: 0; bottom: -20px; display: none;}
+    10%{opacity: .1; bottom: -18px;}
+    20%{opacity: .2; bottom: -16px;}
+    30%{opacity: .3; bottom: -14px;}
+    40%{opacity: .4; bottom: -12px;}
+    50%{opacity: .5; bottom: -10px;}
+    60%{opacity: .6; bottom: -8px;}
+    70%{opacity: .7; bottom: -6px; display: block;}
+    80%{opacity: .8; bottom: -4px;}
+    90%{opacity: .9; bottom: -2px;}
+    100%{opacity: 1; bottom: 0;} 
 }
 .slider-button {
    position: absolute;
