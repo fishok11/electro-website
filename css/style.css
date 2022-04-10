@@ -151,6 +151,7 @@ img {
 .top-menu {
     display: flex;
     padding-top: 15px;
+    position: relative;
 }
 .top-menu__categories {
   
@@ -202,6 +203,32 @@ img {
 }
 .basket-link__ico {
     margin-right: 8px;
+}
+.shop-list {
+    z-index: 1000;
+    overflow: hidden;
+    min-width: 279px;
+    max-height: 0;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: rgb(233, 231, 231);
+    box-shadow: 0 5px 3px rgb(196, 195, 195);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.shop-list--active {
+    max-height: 500px;
+    transition: 3s;
+} 
+.shop-list__text {
+    margin: 0;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    color: #2f2f2f;
+    padding: 16px;
 }
 
 /*----------------------------------------------------------------*/
