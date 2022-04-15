@@ -318,9 +318,9 @@ img {
     to{opacity: 0;}
 }
 .main-slider__item--active .main-slider__text {
+    opacity: 0;
     animation-duration: .6s;
     animation-delay: .9s;
-    opacity: 0;
     animation-name: text;
 }
 @keyframes text {
@@ -373,9 +373,9 @@ img {
     to{opacity: 0;}
 }
 .main-slider__item--active .main-slider__link {
+    opacity: 0;
     animation-duration: .7s;
     animation-delay: 1.1s;
-    opacity: 0;
     animation-name: link;
 }
 @keyframes link {
