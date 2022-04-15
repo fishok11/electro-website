@@ -264,14 +264,19 @@ img {
     color: var(--main-blue);
     margin: 0 0 7px 0;
     font-size: 30px;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+    animation-name: headerOp;
+    position: relative;
+}
+@keyframes headerOp {
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+.main-slider__item--active .main-slider__header {
     opacity: 0;
     animation-duration: .8s;
     animation-delay: .7s;
-    animation-fill-mode: forwards;
-    animation-name: none;
-    position: relative;
-}
-.main-slider__item--active .main-slider__header {
     animation-name: header;
 }
 @keyframes header {
@@ -303,14 +308,19 @@ img {
     color: #888888;
     margin: 7px 0;
     font-size: 14px;
-    opacity: 0;
-    animation-duration: .6s;
-    animation-delay: .9s;
+    animation-duration: .8s;
     animation-fill-mode: forwards;
-    animation-name: none;
+    animation-name: textOp;
     position: relative;
 } 
+@keyframes textOp {
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
 .main-slider__item--active .main-slider__text {
+    animation-duration: .6s;
+    animation-delay: .9s;
+    opacity: 0;
     animation-name: text;
 }
 @keyframes text {
@@ -350,17 +360,22 @@ img {
     color: #fff;
     border-radius: 4px;
     transition: 0.3s;
-    opacity: 0;
-    animation-duration: .7s;
-    animation-delay: 1.1s;
+    animation-duration: .8s;
     animation-fill-mode: forwards;
-    animation-name: none;
+    animation-name: linkOp;
     position: relative;
 }
 .main-slider__link:hover {
     background-color: var(--main-blue);
 }
+@keyframes linkOp { 
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
 .main-slider__item--active .main-slider__link {
+    animation-duration: .7s;
+    animation-delay: 1.1s;
+    opacity: 0;
     animation-name: link;
 }
 @keyframes link {
