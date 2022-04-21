@@ -25,7 +25,7 @@ document.getElementsByClassName("slider-button__right")[0].addEventListener("cli
 
 function sliderSwipAuto() {
 
-    if ( slideIndex >= (slides.length - 1) ) {
+    if ( slideIndex === (slides.length - 1) ) {
         slides[slideIndex].classList.remove('main-slider__item--active');
         slideIndex = 0
         slides[slideIndex].classList.add('main-slider__item--active');
